@@ -78,6 +78,7 @@ dune_quotes=(
 	"Muad’Dib learned rapidly because his first training was in how to learn.\n - Frank Herbert - Dune"
 
 )
-echo "${dune_quotes[$(($RANDOM % ${#dune_quotes[@]} + 1))]}"
+# "\e[1m" = bold
+echo "\e[1m${dune_quotes[$(($RANDOM % ${#dune_quotes[@]} + 1))]}"
 echo
 unset dune_quotes
